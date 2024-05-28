@@ -1,0 +1,13 @@
+body {
+  font-size: 25px;
+  background-color: tan;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#PlayButton {
+  font-size: 65px;
+  font: ;
+}
+.PlayButtonDIV {
+  text-align: center;
+}

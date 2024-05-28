@@ -3,10 +3,11 @@ const prompt = require("prompt-sync")();
 document.getElementById("PlayButton").addEventListener("click", game_running)
 actualgame = false;
 document.getElementById("PlayButton").innerText = game_running() = true
-
+document.getElementById("Instructions").addEventListener("click", )
 let NofGuests = 0
-function game_running() {
-  actualgame = true;
+
+function Play() {
+  document.getElementById()
 }
 
 while (actualgame == true) {
@@ -14,41 +15,42 @@ while (actualgame == true) {
 }
 
 function game() {
-  
+
 }
 
 function CoffeeType(){;
   let randomflavour = randInt(1,3);
   if (randomflavour == 1){;
-      CoffeeT = "Regular Patty";
+      CoffeeT = "Espresso";
   }
   else if (randomflavour == 2){
-      CoffeeT = "Tofu Patty"
+      CoffeeT = "Mocha"
   }
   else if (randomflavour == 3){
-      burger_patty = "Mystery patty"
+      burger_patty = "Housebrewed Coffee"
   }
 }
 
 function toppings() {
   let topping = randInt(1, 5)
   if (topping == 1){;
-  order_of_toppings1 = "tomato"
+  order_of_toppings1 = "Whipped Cream"
   }
   else if(topping == 2){;
-  order_of_toppings1 = "lettuce"
+  order_of_toppings1 = "Cinnamon"
   }
   else if (topping == 3){;
-  order_of_toppings1 = "onions"
+  order_of_toppings1 = "Chocalote Chips"
   }
   else if(topping == 4){;
-  order_of_toppings1 = "cheese"
+  order_of_toppings1 = "Wafers"
   }
   else if(topping == 5){;
-  order_of_toppings1 = "No topping"
+  order_of_toppings1 = "Cookie"
   }
   return order_of_toppings1
 }
+
 
 function order(){
   let GuestsOrder = ("I'd like a " + CoffeeT + " with " + toppings() + " with " + toppings() + ", thank you!")
