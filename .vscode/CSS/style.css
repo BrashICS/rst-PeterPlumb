@@ -6,8 +6,35 @@ body {
 
 #PlayButton {
   font-size: 65px;
-  font: ;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
 }
 .PlayButtonDIV {
   text-align: center;
 }
+
+.AngelsLOGO {
+  text-align: center;
+}
+#Instructions {
+  font-size: 65px;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
+}
+
+#Sources {
+  font-size: 65px;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
+}
+
+.ToppingButtonDIV {
+  text-align: center;
+}
+

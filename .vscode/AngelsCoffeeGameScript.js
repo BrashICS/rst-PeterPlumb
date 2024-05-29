@@ -51,9 +51,38 @@ function toppings() {
   return order_of_toppings1
 }
 
+let WhippedCream = 0
+let Cinnamon = 0
+let ChocaloteChips = 0
+let Wafers = 0
+let Cookie = 0
+function toppings2() {
+  let topping2 = randInt(1, 5)
+  if (topping2 == 1){;
+  order_of_toppings2 = WhippedCream
+  }
+  else if(topping2 == 2){;
+  order_of_toppings2 = Cinnamon
+  }
+  else if (topping2 == 3){;
+  order_of_toppings2 = ChocaloteChips
+  }
+  else if(topping2 == 4){;
+  order_of_toppings2 = Wafers
+  }
+  else if(topping == 5){;
+  order_of_toppings2 = Cookie
+  }
+  return order_of_toppings2
+}
+
+
 
 function order(){
-  let GuestsOrder = ("I'd like a " + CoffeeT + " with " + toppings() + " with " + toppings() + ", thank you!")
+  let CoffeeTG = CoffeeT
+  let topping1 = order_of_toppings1
+  let topping2 = order_of_toppings2
+  let GuestsOrder = ("I'd like a " + CoffeeTG + " with " + topping1 + " with " + topping2 + ", thank you!")
   NofGuests = NofGuests + 1
 }
 
