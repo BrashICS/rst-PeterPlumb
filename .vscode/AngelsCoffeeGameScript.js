@@ -1,61 +1,86 @@
 'use strict';
-const prompt = require("prompt-sync")();
-document.getElementById("PlayButton").addEventListener("click", game_running)
-actualgame = false;
-document.getElementById("PlayButton").innerText = game_running() = true
-document.getElementById("Instructions").addEventListener("click", )
+document.getElementById("WhippedCream").addEventListener("DragEvent"), userdrink
+document.getElementById("UserCupInput").addEventListener("Drop"), userdrink
+document.getElementById("Layer1").addEventListener("Drop"), layer
+document.getElementById("Layer1").addEventListener("Drop"), changeImage
 let NofGuests = 0
 
 function Play() {
   document.getElementById()
 }
 
+function WhippedCream {
+
+}
 while (actualgame == true) {
   game()
 }
 
+function userdrink () {
+  if (document.getElementById("WhippedCream")) {
+    
+  }
+}
 function game() {
+
+}
+
+function changeImage(Image) {
+  document.getElementById("Layer1").src
+}
+function layer() {
+  if (document.getElementById == ("Layer1")) {
+    document.getElementById("Layer1").hidden = false
+  }
+  else if (document.getElementById == ("Layer2")) {
+    document.getElementById("Layer2").hidden = false
+  }
+  else if (document.getElementById == ("Layer3")) {
+    document.getElementById("Layer3").hidden = false
+  }
 
 }
 
 function CoffeeType(){;
   let randomflavour = randInt(1,3);
   if (randomflavour == 1){;
-      CoffeeT = "Espresso";
+      CoffeeT = "Milk";
   }
   else if (randomflavour == 2){
-      CoffeeT = "Mocha"
+      CoffeeT = "Cream"
   }
   else if (randomflavour == 3){
-      burger_patty = "Housebrewed Coffee"
+      CoffeeT = "Coldbrew"
   }
+  return CoffeeT
 }
 
 function toppings() {
   let topping = randInt(1, 5)
   if (topping == 1){;
-  order_of_toppings1 = "Whipped Cream"
+  order_of_toppings1 = WhippedCream
   }
   else if(topping == 2){;
-  order_of_toppings1 = "Cinnamon"
+  order_of_toppings1 = Cinnamon
   }
   else if (topping == 3){;
-  order_of_toppings1 = "Chocalote Chips"
+  order_of_toppings1 = ChocaloteChips
   }
   else if(topping == 4){;
-  order_of_toppings1 = "Wafers"
+  order_of_toppings1 = Wafers
   }
   else if(topping == 5){;
-  order_of_toppings1 = "Cookie"
+  order_of_toppings1 = Nuts
   }
   return order_of_toppings1
 }
+
 
 let WhippedCream = 0
 let Cinnamon = 0
 let ChocaloteChips = 0
 let Wafers = 0
-let Cookie = 0
+let Nuts = 0
 function toppings2() {
   let topping2 = randInt(1, 5)
   if (topping2 == 1){;
@@ -76,13 +101,10 @@ function toppings2() {
   return order_of_toppings2
 }
 
-
-
 function order(){
-  let CoffeeTG = CoffeeT
   let topping1 = order_of_toppings1
   let topping2 = order_of_toppings2
-  let GuestsOrder = ("I'd like a " + CoffeeTG + " with " + topping1 + " with " + topping2 + ", thank you!")
+  let GuestsOrder = (CoffeeT + topping1 + topping2)
   NofGuests = NofGuests + 1
 }
 
@@ -91,4 +113,11 @@ function randInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+if (NofGuests < 0) {
+  order()
+}
+console.log(order())
+console.log(order())
+console.log(order())
 
