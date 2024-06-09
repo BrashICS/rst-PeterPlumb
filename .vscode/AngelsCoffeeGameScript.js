@@ -1,30 +1,27 @@
 'use strict';
-document.getElementById("WhippedCream").addEventListener("DragEvent"), userdrink
-document.getElementById("UserCupInput").addEventListener("Drop"), userdrink
-document.getElementById("Layer1").addEventListener("Drop"), layer
-document.getElementById("Layer1").addEventListener("Drop"), changeImage
-let NofGuests = 0
+/**document.getElementById("WhippedCream").addEventListener("DragEvent", userdrink)/*
+/**document.getElementById("UserCupInput").addEventListener("Drop", userdrink)*/
+ /**document.getElementById("Layer1ID").addEventListener("Drop", layer)*/
+/**document.getElementById("Layer2ID").addEventListener("Drop", changeImage)*/
+const WhippedCream = document.querySelector('WhippedCream')
 
-function Play() {
-  document.getElementById()
+document.getElementById("WhippedCream").addEventListener('dragstart', dragstart)
+
+
+function dragstart(e) {
+  console.log("drag starts")
 }
 
-function WhippedCream {
-
-}
-while (actualgame == true) {
-  game()
-}
+/**
 
 function userdrink () {
   if (document.getElementById("WhippedCream")) {
-    
+
   }
 }
-function game() {
-
-}
-
+*
+ */
+/**
 function changeImage(Image) {
   document.getElementById("Layer1").src
 }
@@ -40,63 +37,73 @@ function layer() {
   }
 
 }
-
+*/
+let Milk = "Coldbrew + Milk"
+let Cream = "Coldbrew + Cream"
+let Coldbrew = "Coldbrew"
+let CoffeeT = 0
 function CoffeeType(){;
   let randomflavour = randInt(1,3);
   if (randomflavour == 1){;
-      CoffeeT = "Milk";
+      CoffeeT = Milk;
   }
   else if (randomflavour == 2){
-      CoffeeT = "Cream"
+      CoffeeT = Cream
   }
   else if (randomflavour == 3){
-      CoffeeT = "Coldbrew"
+      CoffeeT = Coldbrew
   }
   return CoffeeT
 }
 
+
+
+let WhippedCream1 = "WhippedCream"
+let Cinnamon1 = "Cinnamon"
+let ChocaloteChips1 = "ChocaloteChips"
+let Wafers1 = "Wafers"
+let Nuts1 = "Nuts"
+
+let topping = randInt(1, 5)
+let order_of_toppings1 = 0
 function toppings() {
   let topping = randInt(1, 5)
   if (topping == 1){;
-  order_of_toppings1 = WhippedCream
+  order_of_toppings1 = WhippedCream1
   }
   else if(topping == 2){;
-  order_of_toppings1 = Cinnamon
+  order_of_toppings1 = Cinnamon1
   }
   else if (topping == 3){;
-  order_of_toppings1 = ChocaloteChips
+  order_of_toppings1 = ChocaloteChips1
   }
   else if(topping == 4){;
-  order_of_toppings1 = Wafers
+  order_of_toppings1 = Wafers1
   }
   else if(topping == 5){;
-  order_of_toppings1 = Nuts
+  order_of_toppings1 = Nuts1
   }
   return order_of_toppings1
 }
 
-
-let WhippedCream = 0
-let Cinnamon = 0
-let ChocaloteChips = 0
-let Wafers = 0
-let Nuts = 0
+let topping2 = randInt(1, 5)
+let order_of_toppings2 = 0
 function toppings2() {
   let topping2 = randInt(1, 5)
   if (topping2 == 1){;
-  order_of_toppings2 = WhippedCream
+  order_of_toppings2 = WhippedCream1
   }
   else if(topping2 == 2){;
-  order_of_toppings2 = Cinnamon
+  order_of_toppings2 = Cinnamon1
   }
   else if (topping2 == 3){;
-  order_of_toppings2 = ChocaloteChips
+  order_of_toppings2 = ChocaloteChips1
   }
   else if(topping2 == 4){;
-  order_of_toppings2 = Wafers
+  order_of_toppings2 = Wafers1
   }
   else if(topping == 5){;
-  order_of_toppings2 = Cookie
+  order_of_toppings2 = Cookie1
   }
   return order_of_toppings2
 }
@@ -104,9 +111,12 @@ function toppings2() {
 function order(){
   let topping1 = order_of_toppings1
   let topping2 = order_of_toppings2
-  let GuestsOrder = (CoffeeT + topping1 + topping2)
+  let CoffeeStyle = CoffeeT
+  let GuestsOrder = (CoffeeStyle + topping1 + topping2)
   NofGuests = NofGuests + 1
+  return GuestsOrder
 }
+
 
 function randInt(min, max) {
   min = Math.ceil(min);
@@ -114,9 +124,15 @@ function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+let NofGuests = 0
 if (NofGuests < 0) {
   order()
 }
+
+CoffeeType()
+toppings2()
+toppings()
+
 console.log(order())
 console.log(order())
 console.log(order())

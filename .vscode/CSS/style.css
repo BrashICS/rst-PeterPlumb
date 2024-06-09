@@ -34,11 +34,15 @@ body {
   margin-bottom: 10px;
 }
 
-.ToppingButtonDIV {
-  position: relative;
-  left: 20px;
+#WhippedCreamDIV {
+
 }
 
+
+.drag-over {
+  border: 8px solid;
+  border-color: black;
+}
 #WhippedCream {
   position: absolute;
   width: 50px;
