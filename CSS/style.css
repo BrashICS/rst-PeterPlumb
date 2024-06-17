@@ -4,6 +4,31 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
+#WhippedCItem {
+  height: 50px;
+  width: 50px;
+}
+
+.WhippedCItem {
+  background-image: url(../Images/WhippedCreamImage.webp);
+  height: 50px;
+  width: 50px;
+  border: 1px black;
+}
+
+
+#BoxCup {
+ width: 150px;
+ height: 200px;
+ background-color: white;
+ border: 20px;
+ border-color: black;
+}
+
 #PlayButton {
   font-size: 65px;
   width: 400px;
@@ -34,8 +59,11 @@ body {
   margin-bottom: 10px;
 }
 
-#WhippedCreamDIV {
-
+.WhippedCreamDIV {
+  position: relative;
+  background-image: url(../Images/WhippedCreamImage.webp);
+  height: 100px;
+  width: 100px;
 }
 
 
