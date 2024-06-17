@@ -8,17 +8,13 @@ body {
   display: none;
 }
 
-#WhippedCItem {
-  height: 50px;
-  width: 50px;
+#WhippedCream {
+  width: 400px;
+  height: 400px;
+  background-image: url(../Images/WhippedCream.webp);
 }
 
-.WhippedCItem {
-  background-image: url(../Images/WhippedCreamImage.webp);
-  height: 50px;
-  width: 50px;
-  border: 1px black;
-}
+
 
 
 #BoxCup {
