@@ -193,7 +193,7 @@ function new_guest() {
   toppings()
   guestOrder = order()
   console.log("I would like a " + guestOrder)
-  document.getElementById('Order').innerHTML = "Please make me a:" + guestOrder
+  document.getElementById('Order').innerHTML = "Please make me a: " + guestOrder
 
 }
 

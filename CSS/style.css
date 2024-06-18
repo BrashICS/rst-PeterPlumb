@@ -8,7 +8,15 @@ body {
   display: none;
 }
 
+#IntroductoryParagraph {
+  font-size: 20px;
+  background-color: white;
+}
 
+#ControlsParagraph {
+  font-size: 20px;
+  background-color: white;
+}
 .FoodItem {
   height: 100px;
   width: 200px;
@@ -99,6 +107,7 @@ body {
   top: 60px;
   left: 20px;
 }
+
 #Layer1 {
   width: 300px;
   height: 300px;
