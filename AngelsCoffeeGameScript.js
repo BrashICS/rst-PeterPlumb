@@ -1,5 +1,5 @@
 'use strict';
-document.getElementById('Checker').addEventListener("click", Checker)
+document.getElementById('Checker').addEventListener("click", Checkers)
 document.getElementById('ResetButton').addEventListener("click", Reset)
 
 document.getElementById('WhippedCream').addEventListener('click', WhippedLayer3Function)
@@ -16,117 +16,123 @@ document.getElementById('ColdBrew').addEventListener('click', ColdBrewLayer1Func
 let Score = 0
 let NofGuests = 0
 
-function Checker() {
-  if (topping1 == UserInputLayer3 && topping2 == UserInputLayer2 && CoffeeStyle == UserInputLayer1) {
-    Score + 1
-     NofGuests - 1
-      document.getElementById('Guest').hidden = true
-}
+function Checkers() {
 
-else {
-  NofGuests - 1
-  document.getElementById('Guest').hidden = true
-}
+  document.getElementById('Layer2').src = "../Images/Transperant.png"
+
+
+  if (topping1 == UserInputLayer2 && topping3 == UserInputLayer3 && CoffeeStyle == UserInputLayer1) {
+
+    Score = Score + 1
+    alert("Thank you for this drink!")
+    Reset()
+
+  }
+  else {
+    alert("You got my order wrong.")
+  }
+
+  new_guest()
 
 }
 
 
 let UserInputLayer3 = 0
 function WhippedLayer3Function() {
-  document.getElementById('Layer3').src= document.getElementById("WhippedCream")
-  UserInputLayer3 = WhippedCream1
+  document.getElementById('Layer3').src = "../Images/WhippedCream.webp"
+  UserInputLayer3 = "Whipped Cream"
 }
+
 function ChocaloteChipLayer3Function() {
-  document.getElementById('Layer3').src= document.getElementById("ChocaloteChip")
-  UserInputLayer3 = ChocaloteChips1
+  document.getElementById('Layer3').src = "../Images/ChocaloteChip.png"
+  UserInputLayer3 = "Chocalote Chips"
 }
+
 function CinnamonLayer3Function() {
-  document.getElementById('Layer3').src= document.getElementById("Cinnamon")
-  UserInputLayer3 = Cinnamon1
+  document.getElementById('Layer3').src = "../Images/Cinnamon.png"
+  UserInputLayer3 = "Cinnamon"
 }
 
 let UserInputLayer2 = 0
 
 function WaferLayer2Function() {
-  document.getElementById('Layer2').src = "Images/WaferImg.png"
-  UserInputLayer2 = Wafers1
+  document.getElementById('Layer2').src = "../Images/WaferImg.png"
+  UserInputLayer2 = "Wafer"
 }
 
 function NutsLayer2Function() {
-  document.getElementById('Layer2').src = "Images/Nuts.png"
-  UserInputLayer2 = Nuts1
+  document.getElementById('Layer2').src = "../Images/Nuts.png"
+  UserInputLayer2 = "Nuts"
 }
 
 function NutmegLayer2Function() {
-  document.getElementById('Layer2').src = "Images/Nutmeg.png"
-  UserInputLayer2 = Nuts1
+  document.getElementById('Layer2').src = "../Images/Nutmeg.png"
+  UserInputLayer2 = "Nutmeg"
 }
 
 let UserInputLayer1 = 0
 
 function ColdBrewLayer1Function() {
-  document.getElementById('Layer1').src = "Images/ColdBrew.png"
-  UserInputLayer1 = Coldbrew1
+  document.getElementById('Layer1').src = "../Images/ColdBrew.png"
+  UserInputLayer1 = "ColdBrew"
 }
 
 function CreamLayer1Function() {
-  document.getElementById('Layer1').src = "Images/Cream.png"
-  UserInputLayer1 = Cream1
+  document.getElementById('Layer1').src = "../Images/Cream.png"
+  UserInputLayer1 = "Cream"
 }
 
 function Reset() {
-  document.getElementById('Layer1').hiddend
-  document.getElementById('Layer2').hidden
-  document.getElementById('Layer3').hidden
+  document.getElementById('Layer1').src = "../Images/Transperant.png"
+  document.getElementById('Layer2').src = "../Images/Transperant.png"
+  document.getElementById('Layer3').src = "../Images/Transperant.png"
 }
 
 let CreamG = document.getElementById("Cream")
 let ColdbrewG = document.getElementById("ColdBrew")
 
-let Cream1 = CreamG
-let Coldbrew1 = ColdbrewG
-
+let Cream1 = "Cream"
+let Coldbrew1 = "ColdBrew"
 let CoffeeT = 0
 
 
-function CoffeeType(){;
-  let randomflavour = randInt(1,2);
-  if (randomflavour == 1){;
-      CoffeeT = Coldbrew1;
+function CoffeeType() {
+  ;
+  let randomflavour = randInt(1, 2);
+  if (randomflavour == 1) {
+    ;
+    CoffeeT = Coldbrew1;
   }
-  else if (randomflavour == 2){
-      CoffeeT = Cream1
+  else if (randomflavour == 2) {
+    CoffeeT = Cream1
   }
   return CoffeeT
 }
 
-let WhippedCreamG = document.getElementById("WhippedCream")
-let CinnamonG = document.getElementById("Cinnamon")
-let ChocaloteChipG = document.getElementById("ChocaloteChip")
-let WafersG = document.getElementById("Wafer")
-let NutsG = document.getElementById("Nuts")
-let NutmegG = document.getElementById("Nutmeg")
 
 
-let WhippedCream1 = WhippedCreamG
-let Cinnamon1 = CinnamonG
-let ChocaloteChips1 = ChocaloteChipG
-let Wafers1 = WafersG
-let Nuts1 = NutsG
-let Nutmeg1 = NutmegG
+let WhippedCream1 = "Whipped Cream"
+let Cinnamon1 = "Cinnamon"
+let ChocaloteChips1 = "Chocalote Chips"
+let Wafers1 = "Wafer"
+let Nuts1 = "Nuts"
+let Nutmeg1 = "Nutmeg"
 
 let topping = randInt(1, 3)
 let order_of_toppings1 = 0
 function toppings() {
   let topping = randInt(1, 3)
-  if (topping == 1){;
-  order_of_toppings1 = Wafers1
+  if (topping == 1) {
+    ;
+    order_of_toppings1 = Wafers1
   }
-  else if(topping == 2){;
-  order_of_toppings1 = Nuts1
+  else if (topping == 2) {
+    ;
+    order_of_toppings1 = Nuts1
   }
-  else if (topping == 3){;
-  order_of_toppings1 = Nutmeg1
+  else if (topping == 3) {
+    ;
+    order_of_toppings1 = Nutmeg1
   }
 
   return order_of_toppings1
@@ -136,14 +142,17 @@ function toppings() {
 let order_of_toppings2 = 0
 function toppings2() {
   let topping2 = randInt(1, 3)
-  if (topping2 == 1){;
-  order_of_toppings2 = WhippedCream1
+  if (topping2 == 1) {
+    ;
+    order_of_toppings2 = WhippedCream1
   }
-  else if(topping2 == 2){;
-  order_of_toppings2 = Cinnamon1
+  else if (topping2 == 2) {
+    ;
+    order_of_toppings2 = Cinnamon1
   }
-  else if (topping2 == 3){;
-  order_of_toppings2 = ChocaloteChips1
+  else if (topping2 == 3) {
+    ;
+    order_of_toppings2 = ChocaloteChips1
   }
   return order_of_toppings2
 }
@@ -154,44 +163,40 @@ let CoffeeStyle = 0
 let toppings1G = 0
 let toppings2G = 0
 let CoffeeStyleG = 0
-function order(){
-   topping1 = order_of_toppings1
-   topping3 = order_of_toppings2
-  let CoffeeStyle = CoffeeT
-  let GuestsOrder1 = (CoffeeStyle + topping1 + topping3)
-  document.getElementById('Guest').hidden = false
+
+
+function order() {
+  topping1 = order_of_toppings1
+  topping3 = order_of_toppings2
+  CoffeeStyle = CoffeeT
+  let GuestsOrder1 = (CoffeeStyle + " " + topping1 + " " + topping3)
+
   NofGuests = NofGuests + 1
   return GuestsOrder1
 }
 
+//alert(NofGuests);
+//counter = 0
+//while (counter < 3) {
+let guestOrder = ""
+function new_guest() {
+  console.log("Guests served today:" + NofGuests)
+  console.log("Score:" + Score)
+  document.getElementById('Score').innerHTML = "Score:" + Score
+  document.getElementById('NofGuests').innerHTML = "Number of guests: " + NofGuests
 
-function GuestsOrder() {
-  if(topping1 == Wafers1){
-    toppings1G =="Wafers"
+  if (NofGuests > 0) {
+    console.log("Score per guest:" + Score / NofGuests)
   }
-  else if(topping1 == Nuts1){
-    toppings1G =="Nuts"
-  }
-  else if(topping1 == Nutmeg1){
-    toppings1G =="Nutmeg"
-  }
-  else if(topping3 == WhippedCream1){
-    toppings2G =="Whipped Cream"
-  }
-  else if(topping3 == Cinnamon1){
-    toppings2G =="Cinnamon"
-  }
-  else if(topping3 == ChocaloteChips1){
-    toppings2G =="Chocalote Chips"
-  }
-  else if(CoffeeStyle == Coldbrew1){
-    CoffeeStyleG == "Coldbrew"
-  }
-  else if(CoffeeStyle == Cream1){
-    CoffeeStyleG == "Cream"
-  }
-  return(CoffeeStyleG + " " + toppings1G + " " + toppings2G)
+  CoffeeType()
+  toppings2()
+  toppings()
+  guestOrder = order()
+  console.log("I would like a " + guestOrder)
+  document.getElementById('Order').innerHTML = "Please make me a:" + guestOrder
+
 }
+
 
 
 function randInt(min, max) {
@@ -200,19 +205,15 @@ function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-while (NofGuests == 0){
-  order()
-}
 
-console.log(randInt(1,3))
-console.log(order())
-CoffeeType()
-toppings2()
-toppings()
-GuestsOrder()
-console.log(GuestsOrder())
-console.log(order_of_toppings1)
-console.log(order_of_toppings2)
-
+new_guest()
+//console.log(Score)
+//console.log(order())
+//console.log(order_of_toppings1)
+//console.log(order_of_toppings2)
+//console.log(UserInputLayer1)
+//console.log(UserInputLayer2)
+//console.log(UserInputLayer3)
+//console.log(NofGuests)
 
 

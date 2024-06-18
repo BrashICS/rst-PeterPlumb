@@ -8,21 +8,20 @@ body {
   display: none;
 }
 
-#WhippedCream {
-  width: 400px;
-  height: 400px;
-  background-image: url(../Images/WhippedCream.webp);
+
+.FoodItem {
+  height: 100px;
+  width: 200px;
 }
 
+#Checker {
+  height: 150px;
+  width: 200px;
+}
 
-
-
-#BoxCup {
- width: 150px;
- height: 200px;
- background-color: white;
- border: 20px;
- border-color: black;
+#ResetButton {
+  height: 150px;
+  width: 200px;
 }
 
 #PlayButton {
@@ -55,80 +54,65 @@ body {
   margin-bottom: 10px;
 }
 
-.WhippedCreamDIV {
-  position: relative;
-  background-image: url(../Images/WhippedCreamImage.webp);
-  height: 100px;
-  width: 100px;
-}
-
-
-.drag-over {
-  border: 8px solid;
-  border-color: black;
-}
-#WhippedCream {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-}
-
 #Nuts {
-  top: 400px;
-  right: 0px;
-  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#Cinnamon {
+  width: 200px;
+  height: 200px;
+}
+#Wafer {
+  width: 200px;
+  height: 200px;
+}
+
+#ChocaloteChip {
+  width: 200px;
+  height: 200px;
+}
+
+#WhippedCream {
+  width: 200px;
+  height: 200px;
+}
+
+#ColdBrew {
+  width: 200px;
+  height: 200px;
+}
+
+#Cream {
+  width: 200px;
+  height: 200px;
+}
+
+#Nutmeg {
+  width: 200px;
+  height: 200px;
+}
+
+
+.Layers {
+  position: relative
+  top: 60px;
+  left: 20px;
+}
+#Layer1 {
   width: 300px;
   height: 300px;
 }
 
-#Cinnamon {
-  top: 400px;
-  left: 600px;
-  position: relative;
-  width: 250px;
-  height: 300px;
-}
-#Wafers {
-  top: 400px;
-  right: 360px;
-  position: absolute;
-  width: 250px;
-  height: 300px;
-}
-
-#ChocaloteChips {
-  top: 400px;
-  right: 340px;
-  position: absolute;
-  width: 200px;
-  height: 300px;
-}
-
-.UserCup {
-  position: absolute;
-  width: 200px;
-}
-
-.Layers {
-  top: 20px;
-  right: 10px;
-}
-
-#Layer1 {
-  z-index: 10;
-}
-
 #Layer2 {
-z-index: 20;
+  width: 300px;
+  height: 300px;
 }
 
 #Layer3 {
-z-index: 30;
+  width: 300px;
+  height: 300px;
 }
-#UserCupInput {
-  width: 200px;
-}
-#Cookie {
-  position: absolute;
-}
+
+
 
