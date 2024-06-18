@@ -1,0 +1,127 @@
+body {
+  font-size: 25px;
+  background-color: tan;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+#IntroductoryParagraph {
+  font-size: 20px;
+  background-color: white;
+}
+
+#ControlsParagraph {
+  font-size: 20px;
+  background-color: white;
+}
+.FoodItem {
+  height: 100px;
+  width: 200px;
+}
+
+#Checker {
+  height: 150px;
+  width: 200px;
+}
+
+#ResetButton {
+  height: 150px;
+  width: 200px;
+}
+
+#PlayButton {
+  font-size: 65px;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
+}
+.PlayButtonDIV {
+  text-align: center;
+}
+
+.AngelsLOGO {
+  text-align: center;
+}
+#Instructions {
+  font-size: 65px;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
+}
+
+#Sources {
+  font-size: 65px;
+  width: 400px;
+  padding: 25px;
+  border: 25px;
+  margin-bottom: 10px;
+}
+
+#Nuts {
+  width: 200px;
+  height: 200px;
+}
+
+#Cinnamon {
+  width: 200px;
+  height: 200px;
+}
+#Wafer {
+  width: 200px;
+  height: 200px;
+}
+
+#ChocaloteChip {
+  width: 200px;
+  height: 200px;
+}
+
+#WhippedCream {
+  width: 200px;
+  height: 200px;
+}
+
+#ColdBrew {
+  width: 200px;
+  height: 200px;
+}
+
+#Cream {
+  width: 200px;
+  height: 200px;
+}
+
+#Nutmeg {
+  width: 200px;
+  height: 200px;
+}
+
+
+.Layers {
+  position: relative
+  top: 60px;
+  left: 20px;
+}
+
+#Layer1 {
+  width: 300px;
+  height: 300px;
+}
+
+#Layer2 {
+  width: 300px;
+  height: 300px;
+}
+
+#Layer3 {
+  width: 300px;
+  height: 300px;
+}
+
+
+
